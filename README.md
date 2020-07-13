@@ -9,7 +9,9 @@ We create a work directory at a place of our choice and clone the main repositor
     host$ mkdir work-cuteradio
     host$ cd work-cuteradio
     host$ git clone --recurse-submodules https://github.com/bstubert/cuteradio.git
+    host$ cd cuteradio
     host$ git checkout qt5.11-thud-rpi3b
+    host$ git submodule update --init
 
 For convenience, we copy the helper script _./cuteradio/ycr_ to the path _~/bin_, which is included in _PATH_. 
 
